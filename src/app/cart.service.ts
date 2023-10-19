@@ -8,7 +8,10 @@ import { HttpClient } from '@angular/common/http';
 export class CartService {
   items: Product[] = [];
   constructor(private http: HttpClient) {
-  this.items = JSON.parse(localStorage.getItem("Items")!)
+    if(localStorage.getItem("Items")){
+      this.items = JSON.parse(localStorage.getItem("Items")!)
+    } 
+ 
 
   }
    

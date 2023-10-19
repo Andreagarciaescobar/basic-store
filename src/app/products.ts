@@ -46,14 +46,14 @@ export const products = [
     id : 6,
     name: 'Pixel 6',
     price: 900,
-    description: 'La mejor expereincia de Android',
+    description: 'La mejor experiencia de Android',
     photo: 'assets/images/PIXEL_6.jpg'
   },
   {
     id: 7,
     name: 'Pixel 6 XL',
     price: 1000,
-    description: 'La mejor expereincia de Android en un teléfono grande',
+    description: 'La mejor experiencia de Android en un teléfono grande',
     photo: 'assets/images/PIXEL_6XL.jpg'
   }
   

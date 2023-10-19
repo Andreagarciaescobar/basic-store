@@ -1,8 +1,7 @@
 /* Global Styles */
-
 * {
   font-family: 'Roboto', Arial, sans-serif;
-  color: #616161;
+  color: #333; 
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,107 +9,120 @@
 
 body {
   margin: 0;
+  background-color: #f5f5f5; 
 }
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; 
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+
 }
 
-router-outlet + *  {
+
+router-outlet + * {
   padding: 0 16px;
 }
 
 /* Text */
-
 h1 {
-  font-size: 32px;
+  font-size: 36px; 
+  font-weight: bold; 
+  color: #1976d2; 
+  margin-bottom: 20px; 
 }
 
 h2 {
-  font-size: 20px;
-}
-
-h1, h2 {
-  font-weight: lighter;
+  font-size: 24px;
+  font-weight: normal; 
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px; 
+  color: #555; 
 }
 
 /* Hyperlink */
-
 a {
-  cursor: pointer;
   color: #1976d2;
   text-decoration: none;
+  transition: color 0.2s; 
 }
 
 a:hover {
-  opacity: 0.8;
+  color: #135ca9; 
 }
 
 /* Input */
-
 input {
-  font-size: 14px;
-  border-radius: 2px;
-  padding: 8px;
-  margin-bottom: 16px;
-  border: 1px solid #BDBDBD;
+  font-size: 16px; 
+  border-radius: 4px; 
+  padding: 10px;
+  margin-bottom: 20px; 
+  border: 1px solid #ccc; 
 }
 
 label {
-  font-size: 12px;
+  font-size: 14px; 
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 8px; 
   display: block;
   text-transform: uppercase;
+  color: #333; 
 }
 
 /* Button */
-.button, button {
-  display: inline-flex;
+.button,
+button {
+  display: inline-block; 
   align-items: center;
-  padding: 8px 16px;
-  border-radius: 2px;
-  font-size: 14px;
+  padding: 12px 20px; 
+  margin-right: 10px; 
+  margin-top: 8px;
+  border-radius: 4px; 
+  font-size: 16px;
   cursor: pointer;
   background-color: #1976d2;
   color: white;
   border: none;
+  transition: background-color 0.2s, opacity 0.2s; 
 }
 
-.button:hover, button:hover {
-  opacity: 0.8;
-  font-weight: normal;
+.button:hover,
+button:hover {
+  background-color: #135ca9; /* Cambia el color de fondo en el hover */
 }
 
-.button:disabled, button:disabled {
-  opacity: 0.5;
-  cursor: auto;
+.button:disabled,
+button:disabled {
+  opacity: 0.6; 
+  cursor: not-allowed; 
 }
 
 /* Fancy Button */
-
 .fancy-button {
-  background-color: white;
-  color: #1976d2;
+  background-color: #1976d2;
+  color: white;
+  border: 2px solid #1976d2; 
+  transition: background-color 0.2s, color 0.2s; 
 }
 
 .fancy-button i.material-icons {
+  padding-right: 8px; 
+}
+
+.fancy-button:hover {
+  background-color: white; 
   color: #1976d2;
-  padding-right: 4px;
 }
 
 /* Top Bar */
-
 app-top-bar {
   width: 100%;
-  height: 68px;
+  height: 80px; 
   background-color: #1976d2;
-  padding: 16px;
+  padding: 16px 32px; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -120,21 +132,21 @@ app-top-bar {
 app-top-bar h1 {
   color: white;
   margin: 0;
+  font-size: 24px; 
 }
 
 /* Checkout Cart, Shipping Prices */
-
 .cart-item, .shipping-item {
   width: 100%;
-  min-width: 400px;
-  max-width: 450px;
+  max-width: 500px; 
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 16px 32px;
-  margin-bottom: 8px;
-  border-radius: 2px;
-  background-color: #EEEEEE;
+  flex-direction: column; 
+  justify-content: space-around; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  border-radius: 8px; 
+  background-color: #ffffff; /* Cambia el fondo a blanco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aumenta el efecto de sombra */
 }
 
 

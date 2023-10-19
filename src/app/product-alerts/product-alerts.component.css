@@ -1,0 +1,21 @@
+p.product-notification {
+    text-align: center;
+ 
+  }
+  
+  p.product-notification button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
+   
+  }
+  
+  p.product-notification button:hover {
+    background-color: #135ca9;
+    opacity: 0.9;
+  }
